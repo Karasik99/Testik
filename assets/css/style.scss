@@ -537,6 +537,19 @@ a{
 }
 
 
+@media (max-width:570px) {
+    .header,
+    .jobs{
+        height: 130dvh;
+    }
+    .about{
+        height: 140dvh;
+    }
+    .reviews{
+        height: 200dvh;
+    }
+}
+
 @media (max-width:510px) {
     .reviews{
         &__review{
