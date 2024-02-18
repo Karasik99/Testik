@@ -28,7 +28,6 @@ a {
   height: 100dvh;
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .header__nav {
   padding: 2rem;
@@ -147,12 +146,12 @@ a {
   padding: 0.7rem 0 0.7rem 1.2rem;
 }
 .header__inner-title {
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(1.4rem, 4vw, 5rem);
   font-weight: 900;
   text-shadow: 0 0.3rem 5px grey;
 }
 .header__inner-subtitle {
-  font-size: clamp(1.5rem, 3vw, 5rem);
+  font-size: clamp(1.3rem, 3vw, 5rem);
 }
 
 .about {
@@ -252,7 +251,7 @@ a {
 }
 .skills__info-title {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   color: black;
   font-weight: 500;
 }
@@ -296,7 +295,7 @@ a {
   gap: 1rem;
 }
 .jobs__card {
-  width: clamp(20rem, 25vw, 25rem);
+  width: clamp(12rem, 25vw, 25rem);
 }
 .jobs__card img {
   width: inherit;
@@ -355,6 +354,7 @@ a {
   gap: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0.3rem 0.3rem 0.16rem black;
+  transform: scale(1);
 }
 .reviews__name {
   color: #2B2D35;
@@ -450,15 +450,21 @@ a {
 }
 @media (max-width: 510px) {
   .reviews__review {
-    transform: scale(0.9);
+    transform: scale(0.7);
+  }
+  .reviews__card {
+    transform: scale(0.7);
   }
 }
 @media (max-width: 470px) {
   .jobs__card {
     transform: scale(0.7);
   }
-  .skills__info-menu {
-    flex-direction: column;
+  .skills__info-item {
+    transform: scale(0.8);
+  }
+  .skills__container {
+    max-width: 85%;
   }
   .footer__items {
     align-items: center;
