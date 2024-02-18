@@ -451,13 +451,13 @@ a {
 @media (max-width: 570px) {
   .header,
   .jobs {
-    height: 130dvh;
+    height: 130vh;
   }
   .about {
-    height: 140dvh;
+    height: 140vh;
   }
   .reviews {
-    height: 200dvh;
+    height: 180vh;
   }
 }
 @media (max-width: 510px) {
