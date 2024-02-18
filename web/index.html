@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web DEV Modul 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <img src="./assets/images/header-logo.png" alt="logo">
+                </div>
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="/" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Обо мне</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Навыки</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Работы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Отзывы</a>
+                    </li>
+                </ul>
+                <div class="header__burger header__opacity ">
+                    <span></span>
+                </div>
+            </nav>
+            <div class="header__inner">
+                <div class="header__inner-lights">
+                    <img src="./assets/images/header-lights.png" alt="lights">
+                    <img class="header__inner-alien" src="./assets/images/header-alien.png" alt="alien">
+                </div>
+                <div class="header__inner-content">
+                    <h1 class="header__inner-title">Диана Корнигор</h1>
+                    <h2 class="header__inner-subtitle">личный сайт веб разработчика</h2>
+                </div>
+            </div>
+            <button class="header-button">
+                Подробнее
+            </button>
+        </div>
+    </header>
+    <main class="main"> 
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <h2 class="about__inner-title">обо мне</h2>
+                    <div class="about__inner-cards">
+                        <div class="about__inner-cards-first">
+                            <p class="about__inner-text">
+                                Меня зовут Диана. Я занимаюсь разработкой современных сайтов и приложений.
+                            </p>
+                            <p class="about__inner-text"> Мне нравится создавать интересные и современные проекты.
+                            </p>
+                            <button class="header-button about-button" >Мои навыки</button>
+                        </div>
+                        <div class="about__inner-cards-second">
+                            <img  src="./assets/images/header-lights.png" alt="lights">
+                            <img class="about__inner-cards-second-img" src="./assets/images/about-cards-img.png" alt="girl">
+                            <div class="about__innear-cards-second-content">
+                                <p>Где живу: Мехико сити</p>
+                                <p>Возраст: 24 </p>
+                                <p>Дата рождения: 1999</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="skills__inner">
+                    <h2 class="skills__inner-title">Навыки</h2>
+                    <div class="skills__container">
+                        <div class="header__inner-lights">
+                            <img src="./assets/images/header-lights.png" alt="lights">
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__info-title">
+                                ЭТОТ САЙТ Я СДЕЛАЛА В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ ROCKET TECH SCHOOL
+                            </h3>
+                            <ul class="skills__info-menu">
+                                <li class="skills__info-item">
+                                    <img src="./assets/images/skills-img-html.png" alt="">
+                                </li>
+                                <li class="skills__info-item">
+                                    <img src="./assets/images/skills-img-css.png" alt="">
+                                </li>
+                                <li class="skills__info-item">
+                                    <img src="./assets/images/skills-img-js.png" alt="">
+                                </li>
+                            </ul>
+                            <button class="header-button skills__info-button">Смотреть работы </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="jobs">
+            <div class="container">
+                <div class="jobs__inner">
+                    <h2 class="jobs__title">Работы</h2>
+                    <ul class="jobs__cards">
+                        <li class="jobs__card">
+                            <img src="./assets/images/jobs-card-1.png" alt="" class="jobs__card-img">
+                        </li>
+                        <li class="jobs__card">
+                            <img src="./assets/images/jobs-card-2.png" alt="" class="jobs__card-img">
+                        </li>
+                        <li class="jobs__card">
+                            <img src="./assets/images/jobs-card-3.png" alt="" class="jobs__card-img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__inner">
+                    <h2 class="reviews__title">Отзывы</h2>
+                    <ul class="reviews__menu">
+                        <li class="reviews__item">
+                            <div class="reviews__cards">
+                                <div class="reviews__card">
+                                    <img src="./assets/images/header-lights.png" alt="lights">
+                                    <img src="./assets/images/reviews-card-img-1.png" alt="human">
+                                    <h4 class="reviews__name">ВЛАДИМИР</h4>
+                                    <p class="reviews__text">ОСНОВАТЕЛЬ Rocket Tech School</p>
+                                </div>
+                                <div class="reviews__review">
+                                    <p class="reviews__info">Эта девочка проходила обучение веб разработке 4 месяца, и уже создает сложные сайты!</p>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__cards">
+                                <div class="reviews__card">
+                                    <img src="./assets/images/header-lights.png" alt="lights">
+                                    <img src="./assets/images/reviews-card-img-2.png" alt="human">
+                                    <h4 class="reviews__name">ДИАНА</h4>
+                                    <p class="reviews__text">Product Lead Rocket Tech School</p>
+                                </div>
+                                <div class="reviews__review">
+                                    <p class="reviews__info">Очень хорошо пишет код. Отличная оптимизация сайта. Современно, стильно, молодежно!</p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__menu">
+                <li class="footer__item footer__items">
+                    <h4 class="footer__info-name">Диана Корнигор</h4>
+                    <p class="footer__info-text">
+                        Личный сайт веб разработчика
+                    </p>
+                </li>
+                <li class="footer__item ">
+                    <p class="footer__info-text">
+                        (c) 2023
+                    </p>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__menu-icons">
+                        <li class="footer__menu-icon">
+                            <img src="./assets/images/footer-icon-1.svg" alt="" class="footer__menu-img">
+                        </li>
+                        <li class="footer__menu-icon">
+                            <img src="./assets/images/footer-icon-2.svg" alt="" class="footer__menu-img">
+                        </li>
+                        <li class="footer__menu-icon">
+                            <img src="./assets/images/footer-icon-3.svg" alt="" class="footer__menu-img">
+                        </li>
+                        <li class="footer__menu-icon">
+                            <img src="./assets/images/footer-icon-4.svg" alt="" class="footer__menu-img">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
