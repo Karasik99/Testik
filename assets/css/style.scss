@@ -25,7 +25,8 @@ a{
 
 .header{
     width: 100%;
-    height: 100dvh;
+    height: max-content;
+    padding-bottom: 2rem;
     background-image: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     
@@ -177,7 +178,8 @@ a{
 
 .about{
     width: 100%;
-    height: 100dvh;
+    height: max-content;
+    padding-bottom: 2rem;
     background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,7 +252,8 @@ a{
 
 .skills{
     width: 100%;
-    height: 100dvh;
+    height: max-content;
+    padding-bottom: 2rem;
     background-image: url('../images/skills-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,7 +311,8 @@ a{
 
 .jobs{
     width: 100%;
-    height: 100dvh;
+    height: max-content;
+    padding-bottom: 2rem;
     background-image: url('../images/jobs-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,7 +358,8 @@ a{
 
 .reviews{
     width: 100%;
-    height: 100dvh;
+    height: max-content;
+    padding-bottom: 2rem;
     background-image: url('../images/rew-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -536,16 +541,6 @@ a{
     }
 }
 
-
-@media (max-width:570px) {
-    .header,
-    .jobs,
-    .about,
-    .reviews{
-        height: max-content;
-        padding-bottom: 1rem;
-    }
-}
 
 @media (max-width:510px) {
     .reviews{
