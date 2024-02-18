@@ -539,14 +539,11 @@ a{
 
 @media (max-width:570px) {
     .header,
-    .jobs{
-        height: 130vh;
-    }
-    .about{
-        height: 140vh;
-    }
+    .jobs,
+    .about,
     .reviews{
-        height: 180vh;
+        height: max-content;
+        padding-bottom: 1rem;
     }
 }
 
