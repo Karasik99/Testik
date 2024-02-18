@@ -29,6 +29,7 @@ a {
   padding-bottom: 2rem;
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header__nav {
   padding: 2rem;
