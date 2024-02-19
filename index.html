@@ -9,32 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="header">
         <div class="container">
             <nav class="header__nav">
                 <div class="header__logo">
-                    <img src="./assets/images/header-logo.png" alt="logo">
+                    <a href="https://yandex.by/images/search?from=tabbar&img_url=https%3A%2F%2Fsun9-10.userapi.com%2Fimpf%2FgPfEfsr1U3WiYkrtdDzvudO7qjrltHEdMpGBrQ%2F2Si80I1Dt7I.jpg%3Fsize%3D320x240%26quality%3D96%26sign%3Db9506adacf88c59a0d89442e0db239a9%26c_uniq_tag%3DrY5i3HTkQggN9piDqhYPEjA5SBvRhhj7YStJOZlpzNU%26type%3Dalbum&lr=157&pos=1&rpt=simage&text=%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2">
+                        <img src="./assets/images/header-logo.png" alt="logo">
+                    </a>
                 </div>
                 <ul class="header__menu">
                     <li class="header__item">
-                        <a href="/" class="header__link">Главная</a>
+                        <a href="#header" class="header__link">Главная</a>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">Обо мне</a>
+                        <a href="#about" class="header__link">Обо мне</a>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">Навыки</a>
+                        <a href="#skills" class="header__link">Навыки</a>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">Работы</a>
+                        <a href="#jobs" class="header__link">Работы</a>
                     </li>
                     <li class="header__item">
-                        <a href="/" class="header__link">Отзывы</a>
+                        <a href="#reviews" class="header__link">Отзывы</a>
                     </li>
                 </ul>
                 <div class="header__burger header__opacity ">
-                    <span></span>
+                    <span class="header__burger-span"></span>
                 </div>
             </nav>
             <div class="header__inner">
@@ -47,13 +49,13 @@
                     <h2 class="header__inner-subtitle">личный сайт веб разработчика</h2>
                 </div>
             </div>
-            <button class="header-button">
+            <a href="#about" class="header-button">
                 Подробнее
-            </button>
+            </a>
         </div>
     </header>
     <main class="main"> 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__inner">
                     <h2 class="about__inner-title">обо мне</h2>
@@ -64,7 +66,7 @@
                             </p>
                             <p class="about__inner-text"> Мне нравится создавать интересные и современные проекты.
                             </p>
-                            <button class="header-button about-button" >Мои навыки</button>
+                            <a href="#skills" class="header-button about-button" >Мои навыки</a>
                         </div>
                         <div class="about__inner-cards-second">
                             <img  src="./assets/images/header-lights.png" alt="lights">
@@ -80,7 +82,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <div class="skills__inner">
                     <h2 class="skills__inner-title">Навыки</h2>
@@ -103,13 +105,13 @@
                                     <img src="./assets/images/skills-img-js.png" alt="">
                                 </li>
                             </ul>
-                            <button class="header-button skills__info-button">Смотреть работы </button>
+                            <a href="#jobs" class="header-button skills__info-button">Смотреть работы </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="jobs">
+        <section class="jobs" id="jobs">
             <div class="container">
                 <div class="jobs__inner">
                     <h2 class="jobs__title">Работы</h2>
@@ -127,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <div class="reviews__inner">
                     <h2 class="reviews__title">Отзывы</h2>
@@ -182,21 +184,31 @@
                 <li class="footer__item">
                     <ul class="footer__menu-icons">
                         <li class="footer__menu-icon">
-                            <img src="./assets/images/footer-icon-1.svg" alt="" class="footer__menu-img">
+                            <a target="_blank" href="https://discord.com/">
+                                <img src="./assets/images/footer-icon-1.svg" alt="" class="footer__menu-img">
+                            </a>
                         </li>
                         <li class="footer__menu-icon">
-                            <img src="./assets/images/footer-icon-2.svg" alt="" class="footer__menu-img">
+                            <a target="_blank" href="https://ru-ru.facebook.com/">
+                                <img src="./assets/images/footer-icon-2.svg" alt="" class="footer__menu-img">
+                            </a>
                         </li>
                         <li class="footer__menu-icon">
-                            <img src="./assets/images/footer-icon-3.svg" alt="" class="footer__menu-img">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <img src="./assets/images/footer-icon-3.svg" alt="" class="footer__menu-img">
+                            </a>
                         </li>
                         <li class="footer__menu-icon">
-                            <img src="./assets/images/footer-icon-4.svg" alt="" class="footer__menu-img">
+                            <a target="_blank" href="https://web.telegram.org/">
+                                <img src="./assets/images/footer-icon-4.svg" alt="" class="footer__menu-img">
+                            </a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

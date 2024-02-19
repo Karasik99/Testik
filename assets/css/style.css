@@ -9,8 +9,16 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
+}
+
+body {
+  overflow: scroll;
 }
 
 a {
@@ -21,6 +29,10 @@ a {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 0.6rem;
+}
+
+.stopscroll {
+  overflow: hidden;
 }
 
 .header {
@@ -43,6 +55,7 @@ a {
   position: absolute;
   top: inherit;
   left: 0;
+  z-index: 1000;
 }
 .header__menu {
   list-style: none;
@@ -72,6 +85,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1000;
 }
 .header__opacity {
   display: none;
@@ -84,6 +98,7 @@ a {
   background-color: white;
 }
 .header__burger span::before {
+  transition: all 0.8s;
   content: "";
   display: block;
   width: inherit;
@@ -95,6 +110,7 @@ a {
   left: 0;
 }
 .header__burger span::after {
+  transition: all 0.8s;
   content: "";
   display: block;
   width: inherit;
@@ -106,15 +122,37 @@ a {
   left: 0;
 }
 .header .active span::before {
+  transition: all 0.8s;
   top: 49%;
   transform: translate(0, -49%) rotate(45deg);
 }
 .header .active span::after {
+  transition: all 0.8s;
   bottom: 41%;
   transform: translate(0, -41%) rotate(-45deg);
 }
+.header .activespan {
+  height: 0;
+}
+.header .activemenu {
+  position: fixed;
+  background-color: #200153;
+  width: 100%;
+  height: 100dvh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
 .header-button {
   display: block;
+  max-width: max-content;
   margin: 0 auto;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
