@@ -37,7 +37,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 14rem;
+  padding-bottom: 11rem;
 }
 .header__logo {
   position: absolute;
@@ -132,17 +132,20 @@ a {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-.header__inner-lights {
-  border-top-left-radius: 0.5rem;
+.header__inner-lights-alien {
   border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   padding: 0.7rem 0 0.7rem 0.7rem;
-  border-bottom: 0.2rem solid black;
   background-color: #D2D0F7;
+  border-bottom: 0.2rem solid black;
+  position: relative;
+}
+.header__inner-lights {
+  padding: 0.7rem 0 0.7rem 0.7rem;
 }
 .header__inner-alien {
   position: absolute;
-  top: 28%;
-  left: 37%;
+  top: -153%;
 }
 .header__inner-content {
   padding: 0.7rem 0 0.7rem 1.2rem;
@@ -159,7 +162,7 @@ a {
 .about {
   width: 100%;
   height: max-content;
-  padding-bottom: 2rem;
+  padding: 3rem 0;
   background-image: url("../images/about-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +221,7 @@ a {
 .skills {
   width: 100%;
   height: max-content;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   background-image: url("../images/skills-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,7 +273,7 @@ a {
 .jobs {
   width: 100%;
   height: max-content;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   background-image: url("../images/jobs-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -311,7 +314,7 @@ a {
 .reviews {
   width: 100%;
   height: max-content;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   background-image: url("../images/rew-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

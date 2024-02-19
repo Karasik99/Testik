@@ -37,7 +37,7 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 14rem;
+        padding-bottom: 11rem;
     }
 
     &__logo{
@@ -89,7 +89,6 @@ a{
         height: 4px;
         border-radius: 1rem;
         background-color: white;
-        
     }
 
     &__burger span::before{
@@ -139,7 +138,6 @@ a{
     }
 
     &__inner{
-        
         margin: 0 auto;
         background-color: white;
         width: 60%;
@@ -147,18 +145,23 @@ a{
         padding-bottom: 1rem;
         margin-bottom: 1rem;
 
-        &-lights{
-            border-top-left-radius: 0.5rem;
+        &-lights-alien{
             border-top-right-radius: 0.5rem ;
+            border-top-left-radius: 0.5rem;
             padding: .7rem 0 .7rem .7rem;
-            border-bottom: 0.2rem solid black;
             background-color: #D2D0F7;
+            border-bottom: 0.2rem solid black;
+            position: relative;
+        }
+
+        &-lights{
+            padding: .7rem 0 .7rem .7rem;
         }
 
         &-alien{
             position: absolute;
-            top: 28%;
-            left: 37%;
+            top: -153%;
+
         }
 
         &-content{
@@ -180,7 +183,7 @@ a{
 .about{
     width: 100%;
     height: max-content;
-    padding-bottom: 2rem;
+    padding: 3rem 0;
     background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,7 +257,7 @@ a{
 .skills{
     width: 100%;
     height: max-content;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     background-image: url('../images/skills-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +316,7 @@ a{
 .jobs{
     width: 100%;
     height: max-content;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     background-image: url('../images/jobs-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +363,7 @@ a{
 .reviews{
     width: 100%;
     height: max-content;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     background-image: url('../images/rew-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
